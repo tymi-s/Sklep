@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sklep!!!!!</title>
-    <h1>przykladowy napis</h1>
+    <title>Rejestracja i logowanie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 <body>
-    
+   <div class=" container" id ="logowanie">
+    <h1 class="form-title">Rejestracja</h1>
+    <form method="post" action="">
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" name="imie" id="imie" placeholder="imie" required>
+           
+        </div>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" name="Nazwisko" id="Nazwisko" placeholder="nazwisko" required>
+           
+        </div>
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="email" required> 
+            
+        </div>
+
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="hasło" name="hasło" placeholder="haslo" required>
+            <label for="hasło">Hasło musi się składać co najmniej z 12 znaków!!!</label>
+        </div>
+
+        <input type="submit" class="btn" value="Zarejestruj się" name="Zarejestruj">
+    </form>
+    <p class="lub">
+        --------------------------------------------lub--------------------------------------------
+    </p>
+   </div>
+
+   
 </body>
 </html>
