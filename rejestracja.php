@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $haslo = $_POST['haslo'];
 
     // Sprawdzanie, czy e-mail już istnieje
-    $email_check = "SELECT * FROM users WHERE email = ?";
+    $email_check = "SELECT * FROM users WHERE mail = ?";
     $stmt = $conn->prepare($email_check);
     $stmt->bind_param("s", $email);
     $stmt->execute();
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $hashed_password = password_hash($haslo, PASSWORD_DEFAULT);
 
         // Przygotowanie zapytania SQL do dodania użytkownika
-        $insert_query = "INSERT INTO users (imie, nazwisko, email, haslo) VALUES (?, ?, ?, ?)";
+        $insert_query = "INSERT INTO users (imie, nazwisko, mail, haslo) VALUES (?, ?, ?, ?)";
         $insert_stmt = $conn->prepare($insert_query);
         $insert_stmt->bind_param("ssss", $imie, $nazwisko, $email, $hashed_password);
 
