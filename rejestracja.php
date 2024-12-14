@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         // Wykonanie zapytania
         if ($insert_stmt->execute()) {
-            echo "Nowy użytkownik został zarejestrowany.";
+            echo "Pomyślnie zarejestrowano!";
         } else {
             echo "Błąd: " . $insert_stmt->error;
         }
