@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const formData = new FormData(form);
 
-        fetch('rejestracja.php', {
+        fetch('f_rejestracja.php', {
             method: 'POST',
             body: formData
         })
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const formData = new FormData(form); // Pobranie danych z formularza
 
-        fetch('login.php', { // Wysyłamy dane do pliku login.php
+        fetch('f_login.php', { // Wysyłamy dane do pliku login.php
             method: 'POST',
             body: formData
         })
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Opcjonalne przekierowanie po zalogowaniu
             if (data === "Zalogowano pomyślnie!") {
-                window.location.href = "index.html"; // Przekierowanie na stronę główną po zalogowaniu
+                window.location.href = "index.php"; // Przekierowanie na stronę główną po zalogowaniu
             }
         })
         .catch(error => {

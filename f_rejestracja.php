@@ -1,5 +1,5 @@
 <?php
-include 'connect.php';
+include 'f_connect.php';
 
 // Sprawdzamy, czy formularz został wysłany
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

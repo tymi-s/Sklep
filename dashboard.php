@@ -3,7 +3,7 @@ session_start();
 
 // Sprawdzanie, czy użytkownik jest zalogowany
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header("Location: index.html");
+    header("Location: index.php");
     exit();
 }
 ?>
@@ -18,6 +18,6 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 <body>
     <h1>Witaj w panelu użytkownika!</h1>
     <p>Zalogowano jako użytkownik ID: <?php echo $_SESSION['user_id']; ?></p>
-    <a href="logout.php">Wyloguj się</a>
+    <a href="f_logout.php">Wyloguj się</a>
 </body>
 </html>
