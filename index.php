@@ -18,7 +18,7 @@ session_start();
             </div>
             <nav>
                 <ul>
-                    <li><a href="">Strona główna</a></li>
+                    <li><a href="index.php">Strona główna</a></li>
                     <li><a href="">Produkty</a></li>
                     <li><a href="">O nas</a></li>
                     <li><a href="">Kontakt</a></li>
