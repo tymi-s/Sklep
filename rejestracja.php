@@ -34,6 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         // Hashowanie hasła
         $hashed_password = password_hash($haslo, PASSWORD_DEFAULT);
+        
 
         // Przygotowanie zapytania SQL do dodania użytkownika
         $insert_query = "INSERT INTO users (imie, nazwisko, mail, haslo) VALUES (?, ?, ?, ?)";
