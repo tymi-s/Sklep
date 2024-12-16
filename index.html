@@ -1,83 +1,41 @@
 <!DOCTYPE html>
-<html lang="pl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rejestracja i logowanie</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container" id ="logowanie">
-                <h1 class="form-title">Rejestracja</h1>
-                <!-- Usuwamy action, aby form nie wysyłał danych tradycyjnie -->
-                <form method="POST" name="rejestracja" id="rejestracjaForm">
-                    <div class="input-group">
-                        <i class="fas fa-user"></i>
-                        <input type="text" name="imie" id="imie" placeholder="imie" required>
-                    </div>
-                    <div class="input-group">
-                        <i class="fas fa-user"></i>
-                        <input type="text" name="nazwisko" id="nazwisko" placeholder="nazwisko" required>
-                    </div>
-                    <div class="input-group">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email" name="email" id="email" placeholder="email" required> 
-                    </div>
-
-                    <div class="input-group">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" id="haslo" name="haslo" placeholder="haslo" required>
-                        <label>Hasło musi się składać co najmniej z 12 znaków</label>
-                    </div>
-
-                    <input type="submit" class="btn" value="Zarejestruj się" name="Zarejestruj">
-                </form>
-
-                <p class="lub"></p>
-                <div class="icons">
-                    <i class="fab fa-google"></i>
-                    <i class="fab fa-facebook"></i>
-                </div>
-                <div class="links">
-                    <p>Masz już konto?</p>
-                    <button id="Zaloguj się">Zaloguj się</button>
-                </div>
-
-                <!-- Miejsce na komunikat zwrotny z serwera -->
-                <div id="komunikat"></div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGMA | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/PHOTOS/sigma2.png" width="125px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Strona główna</a></li>
+                    <li><a href="">Produkty</a></li>
+                    <li><a href="">O nas</a></li>
+                    <li><a href="">Kontakt</a></li>
+                    <li><a href="rejestracja.html">Login</a></li>
+                    <li><a href="">Konto</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <div class="container" id ="logowanie">
-                <h1 class="form-title">Logowanie</h1>
-                <form method="post" action="">
-                    <div class="input-group">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email" name="email" placeholder="email" required> 
-                    </div>
-
-                    <div class="input-group">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" name="hasło" placeholder="haslo" required>
-                    </div>
-                    <p class="recover">
-                        <a href="#">Odzyskaj Hasło</a>  
-                    </p>
-
-                    <input type="submit" class="btn" value="Zaloguj" name="Zarejestruj">
-                </form>
-
-                <p class="lub"></p>
-                <div class="icons">
-                    <i class="fab fa-google"></i>
-                    <i class="fab fa-facebook"></i>
-                </div>
-                <div class="links">
-                    <p>Nie masz jeszcze konta?</p>
-                    <button id="Zaloguj się">Zarejestruj się</button>
-                </div>
+        <div class="row">
+            <div class="col-2 ">
+                <h1>Give Yourself <br>A fresh look!</h1>
+                <p>Mistake is the lesson <br> Inaction is a falure <br>Tymon Szyler</p>
+            </div>
+            <div class="col-2 ">
+                <img src="PHOTOS/on.png">
+            </div>
+            <div class="col-2">
+                <img src="PHOTOS/ona.png">
+            </div>
         </div>
-
-        <script src="script.js"></script>
-    </body>
+    </div>
+   
+</body>
 </html>
