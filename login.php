@@ -1,25 +1,10 @@
 <?php
-session_start(); // Rozpoczęcie sesji
-
-// Dane połączenia z bazą danych
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "strona";
-
-// Tworzenie połączenia
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Sprawdzanie połączenia
-if ($conn->connect_error) {
-    die("Błąd połączenia: " . $conn->connect_error);
-}
+include 'connect.php';
 
 // Obsługa logowania
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $haslo = $_POST['hasło']; // Zmienna `hasło` zgodna z polem w formularzu
-
     // Sprawdzanie, czy użytkownik istnieje
     $login_query = "SELECT id, haslo FROM users WHERE mail = ?";
     $stmt = $conn->prepare($login_query);

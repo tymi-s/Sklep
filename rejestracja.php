@@ -1,17 +1,5 @@
 <?php
-// Dane połączenia z bazą danych
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "strona";
-
-// Tworzenie połączenia
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Sprawdzanie połączenia
-if ($conn->connect_error) {
-    die("Błąd połączenia: " . $conn->connect_error);
-}
+include 'connect.php';
 
 // Sprawdzamy, czy formularz został wysłany
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

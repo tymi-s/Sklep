@@ -45,12 +45,12 @@
                 </div>
 
                 <!-- Miejsce na komunikat zwrotny z serwera -->
-                <div id="komunikat"></div>
+                <div id="komunikat_r"></div>
         </div>
         
         <div class="container" id ="logowanie">
                 <h1 class="form-title">Logowanie</h1>
-                <form method="post" action="">
+                <form method="POST" name="logowanie" id="logowanieForm">
                     <div class="input-group">
                         <i class="fas fa-envelope"></i>
                         <input type="email" name="email" placeholder="email" required> 
@@ -64,7 +64,7 @@
                         <a href="#">Odzyskaj Hasło</a>  
                     </p>
 
-                    <input type="submit" class="btn" value="Zaloguj" name="Zarejestruj">
+                    <input type="submit" class="btn" value="Zaloguj się" name="Zaloguj">
                 </form>
 
                 <p class="lub"></p>
@@ -76,8 +76,9 @@
                     <p>Nie masz jeszcze konta?</p>
                     <button id="Zaloguj się">Zarejestruj się</button>
                 </div>
+                <div id="komunikat_l"></div>
         </div>
 
-        <script src="script.js"></script>
+        <script src="script.js?v=1.0"></script>
     </body>
 </html>
