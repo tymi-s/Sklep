@@ -1,13 +1,18 @@
 <?php
 session_start();
-?>
 
+// Sprawdzanie, czy użytkownik jest zalogowany
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header("Location: index.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIGMA | Ecommerce Website Design</title>
+    <title>Panel uzytkownika</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body> 
@@ -34,18 +39,11 @@ session_start();
                 </ul>
             </nav>
         </div>
-        <div class="row">
-            <div class="col-2 ">
-                <h1>Give Yourself <br>A fresh look!</h1>
-                <p>Mistake is the lesson <br> Inaction is a falure <br>Tymon Szyler</p>
-            </div>
-            <div class="col-2 ">
-                <img src="PHOTOS/on.png">
-            </div>
-            <div class="col-2">
-                <img src="PHOTOS/ona.png">
-            </div>
-        </div>
+        <h1>Panel uzytkownika</h1>
+        <div>ID: <?php echo $_SESSION['user_id']?></div>
+        <div>E-mail: <?php echo $_SESSION['user_email'] ?></div>
+        <div>Imie: <?php echo $_SESSION['user_name'] ?></div>
+        <div>Nazwisko: <?php echo $_SESSION['user_lastname'] ?></div>
     </div>
    
 </body>
