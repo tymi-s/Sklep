@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Usuwa rozszerzenie .php z adresu
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+)$ $1.php [L]
+
+# Przekierowanie index.php na katalog główny
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index\.php [NC]
+RewriteRule ^index\.php$ / [R=301,L]

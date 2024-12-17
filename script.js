@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Opcjonalne przekierowanie po zalogowaniu
             if (data === "Zalogowano pomyślnie!") {
-                window.location.href = "index.php"; // Przekierowanie na stronę główną po zalogowaniu
+                window.location.href = "/Sklep"; // Przekierowanie na stronę główną po zalogowaniu
             }
         })
         .catch(error => {

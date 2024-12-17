@@ -18,17 +18,17 @@ session_start();
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.php">Strona główna</a></li>
+                    <li><a href="/Sklep">Strona główna</a></li>
                     <li><a href="">Produkty</a></li>
                     <li><a href="">O nas</a></li>
                     <li><a href="">Kontakt</a></li>
                     <li class="odstep"></li>
                     <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true): ?>
                         <li class="witaj" >Witaj <?php echo htmlspecialchars($_SESSION['user_name']); ?></li>
-                        <li><a href="konto.php">Konto</a></li>
+                        <li><a href="konto">Konto</a></li>
                         <li><a href="f_logout.php">Wyloguj się</a></li> <!-- Zrobic w js wylogowanie? -->
                     <?php else: ?>
-                        <li><a href="logowanie.php">Login</a></li>
+                        <li><a href="logowanie">Login</a></li>
                     <?php endif; ?>
                     
                 </ul>
