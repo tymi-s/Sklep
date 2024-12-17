@@ -59,3 +59,6 @@ div.hello {
   color:rgb(86, 86, 86);
   font-size: 24px;
 }
+body {
+  background-color:darkgray; 
+}
