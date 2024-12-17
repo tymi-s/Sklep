@@ -1,13 +1,14 @@
 # Sklep
 Giga projekt 4/4
 
-# Tworzenie bazy danych
+# Struktura strony i uruchomienie xampp
 
-(Folder ze stroną musi być w folderze `htdocs`, który znajduje się w folderze `xampp`.)
-
+1. Po pobraniu `xampp` całe repozytorium umieścić w `\xampp\htdocs` (usunąć poprzednią zawartość htdocs)
+2. Włącz `xampp` i moduły `Apache` oraz `MySQL`
+3. Otwórz stronę przez `localhost/Sklep`
 ## Utworzenie bazy danych
 
-1. W `xampp` utwórz bazę danych o nazwie `users`.
+1. W `xampp` utwórz bazę danych o nazwie `strona`.
 2. Utwórz tabelę w tej bazie za pomocą następującego zapytania SQL:
 
 ```sql
@@ -19,8 +20,4 @@ CREATE TABLE users (
     haslo TEXT
 );
 ```
-## Struktura strony i uruchomienie xampp
 
-1. Po pobraniu `xampp` całe repozytorium umieścić w `\xampp\htdocs` (usunąć poprzednią zawartość htdocs)
-2. Włącz `xampp` i moduły `Apache` oraz `MySQL`
-3. Otwórz stronę przez `localhost/Sklep`
