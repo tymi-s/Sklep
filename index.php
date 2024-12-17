@@ -18,8 +18,7 @@ session_start();
             </div>
             <nav>
                 <ul>
-                    <li><a href="/Sklep">Strona główna</a></li>
-                    <li><a href="">Produkty</a></li>
+                
                     <li><a href="">O nas</a></li>
                     <li><a href="">Kontakt</a></li>
                     <li class="odstep"></li>
@@ -40,12 +39,12 @@ session_start();
                 <p>Mistake is the lesson <br> Inaction is a falure <br>Tymon Szyler</p>
             </div>
             <div class="col-2 ">
-                <a href="https://www.youtube.com/watch?v=frAhxXbLetk">
+                <a href="http://localhost/Sklep/on.html">
                     <img src="PHOTOS/on.png" alt="On" style="cursor: pointer;">
                 </a>
             </div>
             <div class="col-2">
-                <a href="http://localhost/Sklep/">
+                <a href="http://localhost/Sklep/ona.html">
                     <img src="PHOTOS/ona.png" alt="Ona" style="cursor: pointer;">
                 </a>
             </div>
