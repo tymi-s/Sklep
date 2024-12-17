@@ -12,7 +12,7 @@ session_start();
         <link rel="stylesheet" href="rejestracja.css">
     </head>
     <body>
-        <div class="container" id ="logowanie">
+        <div class="container" id ="signup" style="display:none">
                 <h1 class="form-title">Rejestracja</h1>
                 <!-- Usuwamy action, aby form nie wysyłał danych tradycyjnie -->
                 <form method="POST" name="rejestracja" id="rejestracjaForm">
@@ -35,7 +35,7 @@ session_start();
                         <label>Hasło musi się składać co najmniej z 12 znaków</label>
                     </div>
 
-                    <input type="submit" class="btn" value="Zarejestruj się" name="Zarejestruj">
+                    <input type="submit" class="btn" value="Zarejestruj się" name="signUp">
                 </form>
 
                 <p class="lub"></p>
@@ -45,14 +45,14 @@ session_start();
                 </div>
                 <div class="links">
                     <p>Masz już konto?</p>
-                    <button id="Zaloguj się">Zaloguj się</button>
+                    <button id="signInButton">Zaloguj się</button>
                 </div>
 
                 <!-- Miejsce na komunikat zwrotny z serwera -->
                 <div id="komunikat_r"></div>
         </div>
         
-        <div class="container" id ="logowanie">
+        <div class="container" id ="signIn">
                 <h1 class="form-title">Logowanie</h1>
                 <form method="POST" name="logowanie" id="logowanieForm">
                     <div class="input-group">
@@ -68,7 +68,7 @@ session_start();
                         <a href="#">Odzyskaj Hasło</a>  
                     </p>
 
-                    <input type="submit" class="btn" value="Zaloguj się" name="Zaloguj">
+                    <input type="submit" class="btn" value="Zaloguj się" name="signIn">
                 </form>
 
                 <p class="lub"></p>
@@ -78,7 +78,7 @@ session_start();
                 </div>
                 <div class="links">
                     <p>Nie masz jeszcze konta?</p>
-                    <button id="Zaloguj się">Zarejestruj się</button>
+                    <button id="signUpButton">Zarejestruj się</button>
                 </div>
                 <div id="komunikat_l"></div>
         </div>
