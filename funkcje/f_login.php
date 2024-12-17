@@ -1,6 +1,6 @@
 <?php
-session_start(); // Rozpoczyna sesję
 include 'f_connect.php';
+session_start(); // Rozpoczyna sesję
 
 // Obsługa logowania
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
