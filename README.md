@@ -19,3 +19,8 @@ CREATE TABLE users (
     haslo TEXT
 );
 ```
+## Struktura strony i uruchomienie xampp
+
+1. Po pobraniu `xampp` całe repozytorium umieścić w `\xampp\htdocs` (usunąć poprzednią zawartość htdocs)
+2. Włącz `xampp` i moduły `Apache` oraz `MySQL`
+3. Otwórz stronę przez `localhost/Sklep`
