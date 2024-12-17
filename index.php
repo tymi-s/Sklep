@@ -40,12 +40,12 @@ session_start();
                 <p>Mistake is the lesson <br> Inaction is a falure <br>Tymon Szyler</p>
             </div>
             <div class="col-2 ">
-                <a href="http://127.0.0.1:5500/strona.html">
+                <a href="http://localhost/Sklep/">
                     <img src="PHOTOS/on.png" alt="On" style="cursor: pointer;">
                 </a>
             </div>
             <div class="col-2">
-                <a href="http://127.0.0.1:5500/strona.html">
+                <a href="http://localhost/Sklep/">
                     <img src="PHOTOS/ona.png" alt="Ona" style="cursor: pointer;">
                 </a>
             </div>
