@@ -44,6 +44,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Wykonanie zapytania
         if ($insert_stmt->execute()) {
             echo "Pomyślnie zarejestrowano!";
+             // Przekierowanie po pomyślnej rejestracji
+        header("Location: http://127.0.0.1:5500/strona.html");
+        exit(); // Zakończenie skryptu po przekierowaniu
         } else {
             echo "Błąd: " . $insert_stmt->error;
         }
