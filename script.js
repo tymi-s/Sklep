@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const formData = new FormData(form);
 
-        fetch('f_rejestracja.php', {
+        fetch('funkcje/f_rejestracja.php', {
             method: 'POST',
             body: formData
         })
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const formData = new FormData(form); // Pobranie danych z formularza
 
-        fetch('f_login.php', { // Wysyłamy dane do pliku login.php
+        fetch('funkcje/f_login.php', { // Wysyłamy dane do pliku login.php
             method: 'POST',
             body: formData
         })

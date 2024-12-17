@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIGMA | Ecommerce Website Design</title>
+    <title>SIGMA | Sklep</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body> 
@@ -26,7 +26,7 @@ session_start();
                     <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true): ?>
                         <li class="witaj" >Witaj <?php echo htmlspecialchars($_SESSION['user_name']); ?></li>
                         <li><a href="konto">Konto</a></li>
-                        <li><a href="f_logout.php">Wyloguj się</a></li> <!-- Zrobic w js wylogowanie? -->
+                        <li><a href="funkcje/f_logout.php">Wyloguj się</a></li> <!-- Zrobic w js wylogowanie? -->
                     <?php else: ?>
                         <li><a href="logowanie">Login</a></li>
                     <?php endif; ?>
