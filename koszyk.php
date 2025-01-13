@@ -5,6 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="on.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGMA | Sklep</title>
@@ -14,14 +15,17 @@ session_start();
     <div class="container">
         <div class="navbar">
             <div class="logo">
+            <a href="/Sklep">
             <img src="PHOTOS/sigma2.png" width="175px" alt="Logo">
+    </a>
             </div>
             <nav>
                 <ul>
-                
+                    <a href="/Sklep">Strona główna &nbsp; </a></li>
+                    <a href="/Sklep/ona.php"> &nbsp; Ona &nbsp; &nbsp; </a></li>
                     <li><a href="">O nas</a></li>
                     <li><a href="">Kontakt</a></li>
-                    <li class="odstep"></li>
+                    
                     <a href="/Sklep/koszyk.php"> Koszyk  </a></li>
                     <li class="odstep"></li>
                     <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true): ?>
@@ -35,27 +39,3 @@ session_start();
                 </ul>
             </nav>
         </div>
-        <div class="row">
-        <div class="col-2 ">
-    <h1 style="font-style: italic;">Give Yourself <br>A fresh look!</h1>
-    <p style="font-style: italic;">
-        "Mistake is the lesson <br> Inaction is a failure" <br>
-        <span style="font-size: smaller;">Tymon Szyler</span>
-    </p>
-</div>
-
-            <div class="col-2 ">
-                <a href="http://localhost/Sklep/on.php">
-                    <img src="PHOTOS/on.png" alt="On" style="cursor: pointer;">
-                </a>
-            </div>
-            <div class="col-2">
-                <a href="http://localhost/Sklep/ona.php">
-                    <img src="PHOTOS/ona.png" alt="Ona" style="cursor: pointer;">
-                </a>
-            </div>
-        </div>
-    </div>
-   
-</body>
-</html>

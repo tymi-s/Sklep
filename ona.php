@@ -26,6 +26,8 @@ session_start();
                     <li><a href="">O nas</a></li>
                     <li><a href="">Kontakt</a></li>
                     <li class="odstep"></li>
+                    <a href="/Sklep/koszyk.php"> Koszyk  </a></li>
+                    <li class="odstep"></li>
                     <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true): ?>
                         <li class="witaj" >Witaj <?php echo htmlspecialchars($_SESSION['user_name']); ?></li>
                         <li><a href="konto">Konto</a></li>
