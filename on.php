@@ -16,7 +16,7 @@ session_start();
         <div class="navbar">
             <div class="logo">
             <a href="/Sklep">
-        <img src="PHOTOS/sigma2.png" width="125px" alt="Logo">
+            <img src="PHOTOS/sigma2.png" width="175px" alt="Logo">
     </a>
             </div>
             <nav>
@@ -95,8 +95,8 @@ session_start();
         <button class="koszyk-btn">Dodaj do koszyka</button>
     </div>
     <div class="produkt">
-    <p>Beżowa koszulka</p>
-        <img src="PHOTOS/k5.png" alt="Produkt 5">
+    <p>Brązowa Koszulka "</p>
+        <img src="PHOTOS/k5.png"  alt="Produkt 5">
         <br> 
         <label for="rozmiar5">Wybierz rozmiar:</label>
         <select id="rozmiar5" name="rozmiar5">

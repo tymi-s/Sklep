@@ -14,7 +14,7 @@ session_start();
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="PHOTOS/sigma2.png" width="125px">
+            <img src="PHOTOS/sigma2.png" width="175px" alt="Logo">
             </div>
             <nav>
                 <ul>
