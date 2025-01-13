@@ -5,7 +5,7 @@
   }
   .produkt {
     text-align: center;
-    width: 100px;
+    width: 180px; /* Ograniczenie szerokości kontenera */
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
@@ -14,16 +14,19 @@
 }
 .produkty {
   display: flex;
-  flex-wrap: wrap; /* Pozwól na zawijanie elementów, jeśli braknie miejsca */
-  justify-content: space-around; /* Równomierne rozmieszczenie */
-  gap: 20px; /* Odstępy między produktami */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
 }
 
 
 .produkt img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  max-width: 100%; /* Dopasowanie obrazu do szerokości kontenera */
+  max-height: 150px; /* Ograniczenie wysokości obrazu */
+  height: auto; /* Zachowanie proporcji */
+  margin-bottom: 10px;
+  object-fit: contain; /* Dopasowanie do kontenera bez zniekształcania */
 }
 
 .produkt label {
@@ -60,4 +63,10 @@
 .produkt:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.produkt label,
+.produkt select,
+.koszyk-btn {
+    width: 100%;
 }
