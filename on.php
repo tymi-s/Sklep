@@ -18,7 +18,7 @@ session_start();
             </div>
             <nav>
                 <ul>
-                
+                    <a href="/Sklep">Strona główna</a></li>
                     <li><a href="">O nas</a></li>
                     <li><a href="">Kontakt</a></li>
                     <li class="odstep"></li>
@@ -39,7 +39,7 @@ session_start();
 
     <div class="produkty">
     <div class="produkt">
-    <p font size="bigger">Biała koszulka</p>
+    <p>Biała koszulka</p>
         <img src="PHOTOS/k1.png" alt="Produkt 1">
         <br> 
         <label for="rozmiar1">Wybierz rozmiar:</label>
@@ -83,6 +83,19 @@ session_start();
         <br> 
         <label for="rozmiar4">Wybierz rozmiar:</label>
         <select id="rozmiar4" name="rozmiar4">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <button class="koszyk-btn">Dodaj do koszyka</button>
+    </div>
+    <div class="produkt">
+    <p>Beżowa koszulka</p>
+        <img src="PHOTOS/k5.png" alt="Produkt 5">
+        <br> 
+        <label for="rozmiar5">Wybierz rozmiar:</label>
+        <select id="rozmiar5" name="rozmiar5">
             <option value="S">S</option>
             <option value="M">M</option>
             <option value="L">L</option>
