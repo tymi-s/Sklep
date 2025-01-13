@@ -54,7 +54,7 @@ session_start();
     <div class="produkt">
     <p>Czarny T-shirt</p>
         <img src="PHOTOS/k2.png" alt="Produkt 2">
-        
+        <br> 
         <label for="rozmiar2">Wybierz rozmiar:</label>
         <select id="rozmiar2" name="rozmiar2">
             <option value="S">S</option>
@@ -67,7 +67,7 @@ session_start();
     <div class="produkt">
     <p>Czarna luźna koszulka</p>
         <img src="PHOTOS/k3.png" alt="Produkt 3">
-        
+        <br> 
         <label for="rozmiar3">Wybierz rozmiar:</label>
         <select id="rozmiar3" name="rozmiar3">
             <option value="S">S</option>
@@ -80,7 +80,7 @@ session_start();
     <div class="produkt">
     <p>Beżowa koszulka</p>
         <img src="PHOTOS/k4.png" alt="Produkt 4">
-       
+        <br> 
         <label for="rozmiar4">Wybierz rozmiar:</label>
         <select id="rozmiar4" name="rozmiar4">
             <option value="S">S</option>
