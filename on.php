@@ -19,6 +19,7 @@ session_start();
             <nav>
                 <ul>
                     <a href="/Sklep">Strona główna</a></li>
+                    <a href="/Sklep/ona.php">Ona</a></li>
                     <li><a href="">O nas</a></li>
                     <li><a href="">Kontakt</a></li>
                     <li class="odstep"></li>
