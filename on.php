@@ -46,6 +46,7 @@ session_start();
     <p>Biała koszulka</p>
         <img src="PHOTOS/k1.png" alt="Produkt 1">
         <br> 
+        <p class="cena">Cena: 99,99 PLN</p>
         <label for="rozmiar1">Wybierz rozmiar:</label>
         <select id="rozmiar1" name="rozmiar1">
             <option value="S">S</option>
