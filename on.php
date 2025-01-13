@@ -33,6 +33,6 @@ session_start();
                 </ul>
             </nav>
         </div>
-
-    </body>
-    </html>
+        </div>
+        </body>
+        </html>
