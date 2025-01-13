@@ -34,10 +34,14 @@ session_start();
             </nav>
         </div>
         <div class="row">
-            <div class="col-2 ">
-                <h1 style="font-style: italic">Give Yourself <br>A fresh look!</h1>
-                <p style="font-style: italic">"Mistake is the lesson <br> Inaction is a falure" <br>Tymon Szyler</p>
-            </div>
+        <div class="col-2 ">
+    <h1 style="font-style: italic;">Give Yourself <br>A fresh look!</h1>
+    <p style="font-style: italic;">
+        "Mistake is the lesson <br> Inaction is a failure" <br>
+        <span style="font-size: smaller;">Tymon Szyler</span>
+    </p>
+</div>
+
             <div class="col-2 ">
                 <a href="http://localhost/Sklep/on.php">
                     <img src="PHOTOS/on.png" alt="On" style="cursor: pointer;">
