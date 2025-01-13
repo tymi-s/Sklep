@@ -5,13 +5,20 @@
   }
   .produkt {
     text-align: center;
-    width: 20px;
+    width: 100px;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
     background-color: #f9f9f9;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+.produkty {
+  display: flex;
+  flex-wrap: wrap; /* Pozwól na zawijanie elementów, jeśli braknie miejsca */
+  justify-content: space-around; /* Równomierne rozmieszczenie */
+  gap: 20px; /* Odstępy między produktami */
+}
+
 
 .produkt img {
     max-width: 100%;
