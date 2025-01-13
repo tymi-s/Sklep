@@ -32,17 +32,12 @@ session_start();
                     <div class="input-group">
                         <i class="fas fa-lock"></i>
                         <input type="password" id="haslo" name="haslo" placeholder="haslo" required>
-                        <label>Hasło musi się składać co najmniej z 12 znaków</label>
                     </div>
 
                     <input type="submit" class="btn" value="Zarejestruj się" name="signUp">
                 </form>
 
                 <p class="lub"></p>
-                <div class="icons">
-                    <i class="fab fa-google"></i>
-                    <i class="fab fa-facebook"></i>
-                </div>
                 <div class="links">
                     <p>Masz już konto?</p>
                     <button id="signInButton">Zaloguj się</button>
@@ -64,18 +59,11 @@ session_start();
                         <i class="fas fa-lock"></i>
                         <input type="password" name="hasło" placeholder="haslo" required>
                     </div>
-                    <p class="recover">
-                        <a href="#">Odzyskaj Hasło</a>  
-                    </p>
 
                     <input type="submit" class="btn" value="Zaloguj się" name="signIn">
                 </form>
 
                 <p class="lub"></p>
-                <div class="icons">
-                    <i class="fab fa-google"></i>
-                    <i class="fab fa-facebook"></i>
-                </div>
                 <div class="links">
                     <p>Nie masz jeszcze konta?</p>
                     <button id="signUpButton">Zarejestruj się</button>
@@ -83,6 +71,6 @@ session_start();
                 <div id="komunikat_l"></div>
         </div>
 
-        <script src="script.js?v=1.0"></script>
+        <script src="script.js?v=1.1"></script>
     </body>
 </html>
