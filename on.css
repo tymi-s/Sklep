@@ -5,7 +5,7 @@
   }
   .produkt {
     text-align: center;
-    width: 180px; /* Ograniczenie szerokości kontenera */
+    width: 100px; /* Ograniczenie szerokości kontenera */
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
@@ -23,7 +23,7 @@
 
 .produkt img {
   max-width: 100%; /* Dopasowanie obrazu do szerokości kontenera */
-  max-height: 150px; /* Ograniczenie wysokości obrazu */
+  max-height: 100px; /* Ograniczenie wysokości obrazu */
   height: auto; /* Zachowanie proporcji */
   margin-bottom: 10px;
   object-fit: contain; /* Dopasowanie do kontenera bez zniekształcania */
