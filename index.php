@@ -39,12 +39,12 @@ session_start();
                 <p>Mistake is the lesson <br> Inaction is a falure <br>Tymon Szyler</p>
             </div>
             <div class="col-2 ">
-                <a href="http://localhost/Sklep/on.html">
+                <a href="http://localhost/Sklep/on.php">
                     <img src="PHOTOS/on.png" alt="On" style="cursor: pointer;">
                 </a>
             </div>
             <div class="col-2">
-                <a href="http://localhost/Sklep/ona.html">
+                <a href="http://localhost/Sklep/ona.php">
                     <img src="PHOTOS/ona.png" alt="Ona" style="cursor: pointer;">
                 </a>
             </div>
