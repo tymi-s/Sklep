@@ -34,12 +34,12 @@ session_start();
             </nav>
         </div>
     
-    #prodkuty:
+    
     </div>
 
     <div class="produkty">
     <div class="produkt">
-        <img src="PHOTOS/k1.png" alt="Produkt 1">
+        <img src="PHOTOS/k 1.png" alt="Czarny T-shirt">
         <p>Produkt 1</p>
         <label for="rozmiar1">Wybierz rozmiar:</label>
         <select id="rozmiar1" name="rozmiar1">
