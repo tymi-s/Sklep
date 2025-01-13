@@ -35,8 +35,8 @@ session_start();
         </div>
         <div class="row">
             <div class="col-2 ">
-                <h1>Give Yourself <br>A fresh look!</h1>
-                <p>Mistake is the lesson <br> Inaction is a falure <br>Tymon Szyler</p>
+                <h1 style="font-style: italic">Give Yourself <br>A fresh look!</h1>
+                <p style="font-style: italic">"Mistake is the lesson <br> Inaction is a falure" <br>Tymon Szyler</p>
             </div>
             <div class="col-2 ">
                 <a href="http://localhost/Sklep/on.php">
