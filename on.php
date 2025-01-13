@@ -40,7 +40,7 @@ session_start();
     <div class="produkty">
     <div class="produkt">
     <p>Biała koszulka</p>
-        <img src="PHOTOS/k 1.png" alt="Produkt 1">
+        <img src="PHOTOS/k1.png" alt="Produkt 1">
         <br> 
         <label for="rozmiar1">Wybierz rozmiar:</label>
         <select id="rozmiar1" name="rozmiar1">
