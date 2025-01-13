@@ -33,6 +33,80 @@ session_start();
                 </ul>
             </nav>
         </div>
-        </div>
-        </body>
-        </html>
+    
+    
+    </div>
+
+    <div class="produkty">
+    <div class="produkt">
+    <p>Biała koszulka</p>
+        <img src="PHOTOS/s1 (1).png" alt="Produkt 1">
+        <br> 
+        <label for="rozmiar1">Wybierz rozmiar:</label>
+        <select id="rozmiar1" name="rozmiar1">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <button class="koszyk-btn">Dodaj do koszyka</button>
+    </div>
+    <div class="produkt">
+    <p>Czarny T-shirt</p>
+        <img src="PHOTOS/s1 (2).png" alt="Produkt 2">
+        <br> 
+        <label for="rozmiar2">Wybierz rozmiar:</label>
+        <select id="rozmiar2" name="rozmiar2">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <button class="koszyk-btn">Dodaj do koszyka</button>
+    </div>
+    <div class="produkt">
+    <p>Czarna luźna koszulka</p>
+        <img src="PHOTOS/s1 (3).png" alt="Produkt 3">
+        <br> 
+        <label for="rozmiar3">Wybierz rozmiar:</label>
+        <select id="rozmiar3" name="rozmiar3">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <button class="koszyk-btn">Dodaj do koszyka</button>
+    </div>
+    <div class="produkt">
+    <p>Beżowa koszulka</p>
+        <img src="PHOTOS/s1 (4).png" alt="Produkt 4">
+        <br> 
+        <label for="rozmiar4">Wybierz rozmiar:</label>
+        <select id="rozmiar4" name="rozmiar4">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <button class="koszyk-btn">Dodaj do koszyka</button>
+    </div>
+    <div class="produkt">
+    <p>Beżowa koszulka</p>
+        <img src="PHOTOS/s1 (5).png" alt="Produkt 4">
+        <br> 
+        <label for="rozmiar5">Wybierz rozmiar:</label>
+        <select id="rozmiar5" name="rozmiar5">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <button class="koszyk-btn">Dodaj do koszyka</button>
+    </div>
+</div>
+
+
+
+
+ </body>
+</html>
