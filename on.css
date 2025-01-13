@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   .produkt {
-    text-align: center; /* Wyśrodkowanie zawartości produktu */
+    text-align: center; 
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 8px;
@@ -13,11 +13,11 @@
 }
 .produkty {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dwa produkty w jednej linii */
+  grid-template-columns: repeat(2, 1fr); /* Dwa produkty w jednym rzędzie */
   gap: 20px; /* Odstęp między produktami */
-  justify-content: center; /* Wyśrodkowanie w poziomie */
-  margin: 20px auto; /* Odstęp i wyśrodkowanie całego kontenera */
-  max-width: 800px; /* Maksymalna szerokość kontenera */
+  margin: 20px auto; /* Wyśrodkowanie w poziomie */
+  max-width: 800px; /* Maksymalna szerokość siatki */
+  justify-content: center; /* Dodatkowe wyśrodkowanie siatki */
 }
 
 
