@@ -99,7 +99,7 @@ session_start();
         <button class="koszyk-btn">Dodaj do koszyka</button>
     </div>
     <div class="produkt">
-    <p>Brązowa Koszulka "</p>
+    <p>Brązowa Koszulka </p>
         <img src="PHOTOS/k5.png"  alt="Produkt 5">
         <br> 
         <p class="cena">Cena: 49,99 PLN</p>

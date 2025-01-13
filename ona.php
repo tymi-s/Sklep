@@ -43,9 +43,10 @@ session_start();
 
     <div class="produkty">
     <div class="produkt">
-    <p>Biała koszulka</p>
+    <p>Czarna sukienka</p>
         <img src="PHOTOS/s1 (1).png" alt="Produkt 1">
         <br> 
+        <p class="cena">Cena: 109,99 PLN</p>
         <label for="rozmiar1">Wybierz rozmiar:</label>
         <select id="rozmiar1" name="rozmiar1">
             <option value="S">S</option>
@@ -56,9 +57,10 @@ session_start();
         <button class="koszyk-btn">Dodaj do koszyka</button>
     </div>
     <div class="produkt">
-    <p>Czarny T-shirt</p>
+    <p>Czarno-Biała sukienka</p>
         <img src="PHOTOS/s1 (2).png" alt="Produkt 2">
         <br> 
+        <p class="cena">Cena: 149,99 PLN</p>
         <label for="rozmiar2">Wybierz rozmiar:</label>
         <select id="rozmiar2" name="rozmiar2">
             <option value="S">S</option>
@@ -69,9 +71,10 @@ session_start();
         <button class="koszyk-btn">Dodaj do koszyka</button>
     </div>
     <div class="produkt">
-    <p>Czarna luźna koszulka</p>
+    <p>Błękitna koszulka</p>
         <img src="PHOTOS/s1 (3).png" alt="Produkt 3">
         <br> 
+        <p class="cena">Cena: 59,99 PLN</p>
         <label for="rozmiar3">Wybierz rozmiar:</label>
         <select id="rozmiar3" name="rozmiar3">
             <option value="S">S</option>
@@ -82,9 +85,10 @@ session_start();
         <button class="koszyk-btn">Dodaj do koszyka</button>
     </div>
     <div class="produkt">
-    <p>Beżowa koszulka</p>
+    <p>Brązowowa koszulka z długim rękawem</p>
         <img src="PHOTOS/s1 (4).png" alt="Produkt 4">
         <br> 
+        <p class="cena">Cena: 69,99 PLN</p>
         <label for="rozmiar4">Wybierz rozmiar:</label>
         <select id="rozmiar4" name="rozmiar4">
             <option value="S">S</option>
@@ -95,9 +99,10 @@ session_start();
         <button class="koszyk-btn">Dodaj do koszyka</button>
     </div>
     <div class="produkt">
-    <p>Beżowa koszulka</p>
+    <p>Niebieska koszulka z długim rękawem</p>
         <img src="PHOTOS/s1 (5).png" alt="Produkt 4">
         <br> 
+        <p class="cena">Cena: 89,99 PLN</p>
         <label for="rozmiar5">Wybierz rozmiar:</label>
         <select id="rozmiar5" name="rozmiar5">
             <option value="S">S</option>
