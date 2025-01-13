@@ -15,7 +15,9 @@ session_start();
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="PHOTOS/sigma2.png" width="125px">
+            <a href="/Sklep">
+        <img src="PHOTOS/sigma2.png" width="125px" alt="Logo">
+    </a>
             </div>
             <nav>
                 <ul>
