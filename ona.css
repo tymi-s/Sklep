@@ -46,7 +46,7 @@ object-fit: contain;
 }
 
 .koszyk-btn {
-  background-color: #ff5722;
+  background-color: #545454;
   color: #fff;
   border: none;
   padding: 10px 15px;
@@ -57,7 +57,7 @@ object-fit: contain;
 }
 
 .koszyk-btn:hover {
-  background-color: #e64a19;
+  background-color: #171717;
 }
 
 .produkt:hover {
