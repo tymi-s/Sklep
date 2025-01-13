@@ -60,6 +60,7 @@ session_start();
     <p>Czarny T-shirt</p>
         <img src="PHOTOS/k2.png" alt="Produkt 2">
         <br> 
+        <p class="cena">Cena: 52,99 PLN</p>
         <label for="rozmiar2">Wybierz rozmiar:</label>
         <select id="rozmiar2" name="rozmiar2">
             <option value="S">S</option>
@@ -73,6 +74,7 @@ session_start();
     <p>Czarna luźna koszulka</p>
         <img src="PHOTOS/k3.png" alt="Produkt 3">
         <br> 
+        <p class="cena">Cena: 60,99 PLN</p>
         <label for="rozmiar3">Wybierz rozmiar:</label>
         <select id="rozmiar3" name="rozmiar3">
             <option value="S">S</option>
@@ -86,6 +88,7 @@ session_start();
     <p>Beżowa koszulka</p>
         <img src="PHOTOS/k4.png" alt="Produkt 4">
         <br> 
+        <p class="cena">Cena: 64,99 PLN</p>
         <label for="rozmiar4">Wybierz rozmiar:</label>
         <select id="rozmiar4" name="rozmiar4">
             <option value="S">S</option>
@@ -99,6 +102,7 @@ session_start();
     <p>Brązowa Koszulka "</p>
         <img src="PHOTOS/k5.png"  alt="Produkt 5">
         <br> 
+        <p class="cena">Cena: 49,99 PLN</p>
         <label for="rozmiar5">Wybierz rozmiar:</label>
         <select id="rozmiar5" name="rozmiar5">
             <option value="S">S</option>
