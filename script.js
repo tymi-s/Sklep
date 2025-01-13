@@ -1,3 +1,17 @@
+const signUpButton=document.getElementById('signUpButton');
+const signInButton=document.getElementById('signInButton');
+const signInForm=document.getElementById('signIn');
+const signUpForm=document.getElementById('signup');
+
+signUpButton.addEventListener('click',function(){
+    signInForm.style.display="none";
+    signUpForm.style.display="block";
+})
+signInButton.addEventListener('click', function(){
+    signInForm.style.display="block";
+    signUpForm.style.display="none";
+})
+
 // dla rejestracji
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('rejestracjaForm');
@@ -16,6 +30,11 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             // Wyświetlamy odpowiedź z serwera w divie "komunikat"
             komunikat.innerHTML = data;
+            if (data == "Pomyślnie zarejestrowano!") {
+                // window.location.href = "/Sklep";
+                // signInForm.style.display="block";
+                // signUpForm.style.display="none";
+            }
         })
         .catch(error => {
             console.error('Błąd:', error);
@@ -54,17 +73,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-const signUpButton=document.getElementById('signUpButton');
-const signInButton=document.getElementById('signInButton');
-const signInForm=document.getElementById('signIn');
-const signUpForm=document.getElementById('signup');
-
-signUpButton.addEventListener('click',function(){
-    signInForm.style.display="none";
-    signUpForm.style.display="block";
-})
-signInButton.addEventListener('click', function(){
-    signInForm.style.display="block";
-    signUpForm.style.display="none";
-})
