@@ -33,6 +33,63 @@ session_start();
                 </ul>
             </nav>
         </div>
-        </div>
-        </body>
-        </html>
+    
+    #prodkuty:
+    </div>
+
+    <div class="produkty">
+    <div class="produkt">
+        <img src="PHOTOS/k1.png" alt="Produkt 1">
+        <p>Produkt 1</p>
+        <label for="rozmiar1">Wybierz rozmiar:</label>
+        <select id="rozmiar1" name="rozmiar1">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <button class="koszyk-btn">Dodaj do koszyka</button>
+    </div>
+    <div class="produkt">
+        <img src="PHOTOS/k2.png" alt="Produkt 2">
+        <p>Produkt 2</p>
+        <label for="rozmiar2">Wybierz rozmiar:</label>
+        <select id="rozmiar2" name="rozmiar2">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <button class="koszyk-btn">Dodaj do koszyka</button>
+    </div>
+    <div class="produkt">
+        <img src="PHOTOS/k3.png" alt="Produkt 3">
+        <p>Produkt 3</p>
+        <label for="rozmiar3">Wybierz rozmiar:</label>
+        <select id="rozmiar3" name="rozmiar3">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <button class="koszyk-btn">Dodaj do koszyka</button>
+    </div>
+    <div class="produkt">
+        <img src="PHOTOS/k4.png" alt="Produkt 4">
+        <p>Produkt 4</p>
+        <label for="rozmiar4">Wybierz rozmiar:</label>
+        <select id="rozmiar4" name="rozmiar4">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <button class="koszyk-btn">Dodaj do koszyka</button>
+    </div>
+</div>
+
+
+
+
+ </body>
+</html>
