@@ -71,6 +71,6 @@ session_start();
                 <div id="komunikat_l"></div>
         </div>
 
-        <script src="script.js?v=1.1"></script>
+        <script src="skrypty/logowanie.js?v=1.0"></script>
     </body>
 </html>

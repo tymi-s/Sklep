@@ -1,29 +1,22 @@
 <?php
 session_start();
 
+$clearMessage = ''; // Zmienna do przechowywania komunikatu
+
 if (isset($_POST['clear_cart'])) {
     unset($_SESSION['cart']);
-    echo '<script>alert("Koszyk został opróżniony!"); window.location.href = "koszyk.php";</script>';
+    $clearMessage = 'Koszyk został opróżniony.';
 }
 
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = [];
 }
 
- 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
-    $product = $_POST['product'];
-    $_SESSION['cart'][] = $product;
-}
-
-
 $totalPrice = 0;
 foreach ($_SESSION['cart'] as $item) {
     $totalPrice += $item['price'];
 }
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,9 +31,9 @@ foreach ($_SESSION['cart'] as $item) {
     <div class="container">
         <div class="navbar">
             <div class="logo">
-            <a href="/Sklep">
-            <img src="PHOTOS/sigma2.png" width="175px" alt="Logo">
-    </a>
+                <a href="/Sklep">
+                    <img src="PHOTOS/sigma2.png" width="175px" alt="Logo">
+                </a>
             </div>
             <nav>
                 <ul>
@@ -50,7 +43,6 @@ foreach ($_SESSION['cart'] as $item) {
                     <a href="/Sklep/on.php"> &nbsp; On &nbsp; &nbsp; </a></li>
                     <li><a href="">O nas</a></li>
                     <li><a href="">Kontakt</a></li>
-                    
                     <a href="/Sklep/koszyk.php"> Koszyk  </a></li>
                     <li class="odstep"></li>
                     <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true): ?>
@@ -60,23 +52,18 @@ foreach ($_SESSION['cart'] as $item) {
                     <?php else: ?>
                         <li><a href="logowanie">Login</a></li>
                     <?php endif; ?>
-                    
                 </ul>
             </nav>
         </div>
-
-
-
-        
     </div>
 
-
     <div class="container">
-        <div class="navbar">
-           
-        </div>
-        
         <h1>Twój Koszyk</h1>
+        
+        <!-- Wyświetlenie komunikatu po opróżnieniu koszyka -->
+        <?php if (!empty($clearMessage)): ?>
+            <p class="clear-message"><?php echo htmlspecialchars($clearMessage); ?></p>
+        <?php endif; ?>
         
         <?php if (count($_SESSION['cart']) > 0): ?>
             <div class="cart">
@@ -92,15 +79,18 @@ foreach ($_SESSION['cart'] as $item) {
         <?php else: ?>
             <p>Twój koszyk jest pusty.</p>
         <?php endif; ?>
-        
     </div>
+
     <form method="POST">
-    <button type="submit" name="clear_cart" class="clear-cart-btn">Opróżnij koszyk</button>
-</form>
+        <button type="submit" name="clear_cart" class="clear-cart-btn">Opróżnij koszyk</button>
+    </form>
 
-
-
-   
-
-     </body>
-     </html>
+    <style>
+        .clear-message {
+            color: green;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</body>
+</html>
