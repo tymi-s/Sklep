@@ -44,16 +44,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// dla rejestracji
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('logowanieForm'); // Formularz logowania
-    const komunikat = document.getElementById('komunikat_l'); // Miejsce na komunikat
+    const form = document.getElementById('rejestracjaForm');
+    const komunikat = document.getElementById('komunikat_r');
 
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // Zapobiega przeładowaniu strony
 
-        const formData = new FormData(form); // Pobranie danych z formularza
+        const formData = new FormData(form);
 
-        fetch('funkcje/f_login.php', { // Wysyłamy dane do pliku login.php
+        fetch('funkcje/f_rejestracja.php', {
             method: 'POST',
             body: formData
         })
@@ -61,15 +62,16 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             // Wyświetlamy odpowiedź z serwera w divie "komunikat"
             komunikat.innerHTML = data;
-
-            // Opcjonalne przekierowanie po zalogowaniu
-            if (data === "Zalogowano pomyślnie!") {
-                window.location.href = "/Sklep"; // Przekierowanie na stronę główną po zalogowaniu
+            if (data == "Pomyślnie zarejestrowano!") {
+                // window.location.href = "/Sklep";
+                // signInForm.style.display="block";
+                // signUpForm.style.display="none";
             }
         })
         .catch(error => {
             console.error('Błąd:', error);
-            komunikat.innerHTML = "Wystąpił błąd podczas logowania.";
+            komunikat.innerHTML = "Wystąpił błąd podczas rejestracji.";
         });
     });
 });
+

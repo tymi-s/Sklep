@@ -88,6 +88,6 @@
         <div id="komunikat_l"></div>
     </div>
 
-    <script src="skrypty/logowanie.js?v=1.0"></script>
+    <script src="skrypty/logowanie.js"></script>
 </body>
 </html>
