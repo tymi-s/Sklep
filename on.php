@@ -94,6 +94,6 @@ $produkty = [
             </div>
         <?php endforeach; ?>
     </div>
-    <script src="skrypty/koszyk.js?v=1.0"></script>
+    <script src="skrypty/koszyk.js?v=1.1"></script>
 </body>
 </html>

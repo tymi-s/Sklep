@@ -28,11 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Wyświetlenie komunikatu w odpowiednim elemencie
                     komunikat.innerHTML = data;
 
-                    // Ukrywanie komunikatu po 3 sekundach
-                    if (data.includes('został dodany do koszyka')) { // Sprawdzamy treść odpowiedzi
+                    // Jeśli użytkownik nie jest zalogowany, komunikat pozostaje
+                    if (!data.includes('Musisz być zalogowany')) {
+                        // Ukrywanie komunikatu po 3 sekundach tylko w przypadku sukcesu
                         setTimeout(() => {
-                            komunikat.innerHTML = ''; // Usuwamy komunikat
-                        }, 3000); // 3000 ms = 3 sekundy
+                            komunikat.innerHTML = '';
+                        }, 3000);
                     }
                 })
                 .catch(error => {
