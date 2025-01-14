@@ -12,19 +12,17 @@ session_start();
     <link rel="stylesheet" href="main.css">
 </head>
 <body> 
-    <script src="Sklep/kosz.js" defer></script>
     <div class="container">
         <div class="navbar">
             <div class="logo">
             <a href="/Sklep">
-            <img src="PHOTOS/sigma2.png" width="175px" alt="Logo">
+        <img src="PHOTOS/sigma2.png" width="175px" alt="Logo">
     </a>
             </div>
             <nav>
                 <ul>
-                
-                    <a href="/Sklep">Strona główna &nbsp; </a></li>
-                    <a href="/Sklep/ona.php"> &nbsp; Ona &nbsp; &nbsp; </a></li>
+                <a href="/Sklep">Strona główna &nbsp; </a></li>
+                <a href="/Sklep/ona.php"> &nbsp; Ona &nbsp; &nbsp; </a></li>
                     <li><a href="">O nas</a></li>
                     <li><a href="">Kontakt</a></li>
                     <li class="odstep"></li>
@@ -58,18 +56,16 @@ session_start();
             <option value="L">L</option>
             <option value="XL">XL</option>
         </select>
-
         <button class="koszyk-btn"
-        data-name="Biała koszulka" 
-        data-price="99.99" 
-        data-size-id="rozmiar1">Dodaj do koszyka</button>
+    data-name="Biała koszulka" 
+    data-price="99.99" 
+    data-size-id="rozmiar1">Dodaj do koszyka</button>
     </div>
-
     <div class="produkt">
-    <p>Czarny T-shirt</p>
+    <p>Czarna koszulka</p>
         <img src="PHOTOS/k2.png" alt="Produkt 2">
         <br> 
-        <p class="cena">Cena: 52,99 PLN</p>
+        <p class="cena">Cena: 49,99 PLN</p>
         <label for="rozmiar2">Wybierz rozmiar:</label>
         <select id="rozmiar2" name="rozmiar2">
             <option value="S">S</option>
@@ -80,10 +76,10 @@ session_start();
         <button class="koszyk-btn">Dodaj do koszyka</button>
     </div>
     <div class="produkt">
-    <p>Czarna luźna koszulka</p>
+    <p>Luźna czarna koszulka</p>
         <img src="PHOTOS/k3.png" alt="Produkt 3">
         <br> 
-        <p class="cena">Cena: 60,99 PLN</p>
+        <p class="cena">Cena: 59,99 PLN</p>
         <label for="rozmiar3">Wybierz rozmiar:</label>
         <select id="rozmiar3" name="rozmiar3">
             <option value="S">S</option>
@@ -97,7 +93,7 @@ session_start();
     <p>Beżowa koszulka</p>
         <img src="PHOTOS/k4.png" alt="Produkt 4">
         <br> 
-        <p class="cena">Cena: 64,99 PLN</p>
+        <p class="cena">Cena: 59,99 PLN</p>
         <label for="rozmiar4">Wybierz rozmiar:</label>
         <select id="rozmiar4" name="rozmiar4">
             <option value="S">S</option>
@@ -108,10 +104,10 @@ session_start();
         <button class="koszyk-btn">Dodaj do koszyka</button>
     </div>
     <div class="produkt">
-    <p>Brązowa Koszulka     </p>
-        <img src="PHOTOS/k5.png"  alt="Produkt 5">
+    <p>Brązowa koszulka</p>
+        <img src="PHOTOS/k5.png" alt="Produkt 4">
         <br> 
-        <p class="cena">Cena: 49,99 PLN</p>
+        <p class="cena">Cena: 79,99 PLN</p>
         <label for="rozmiar5">Wybierz rozmiar:</label>
         <select id="rozmiar5" name="rozmiar5">
             <option value="S">S</option>
@@ -125,9 +121,7 @@ session_start();
 
 
 
-
-
-
+</div>
 
 <script>
     document.querySelectorAll('.koszyk-btn').forEach(button => {
@@ -142,15 +136,24 @@ session_start();
     });
 
     function addToCart(name, price, size) {
-       
-        let cart = JSON.parse(sessionStorage.getItem('cart')) || [];
-        
-        cart.push({ name, price, size });
-        sessionStorage.setItem('cart', JSON.stringify(cart));
-        
-        alert('Produkt dodany do koszyka!');
-    }
-</script>
+    const product = { name, price, size };
 
+    fetch('dodaj_do_koszyka.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(product)
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert(data.message);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+
+</script>
  </body>
 </html>

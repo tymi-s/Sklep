@@ -1,7 +1,10 @@
 <?php
 session_start();
 
-
+if (isset($_POST['clear_cart'])) {
+    unset($_SESSION['cart']);
+    echo '<script>alert("Koszyk został opróżniony!"); window.location.href = "koszyk.php";</script>';
+}
 
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = [];
@@ -29,7 +32,7 @@ foreach ($_SESSION['cart'] as $item) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGMA | Sklep</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="koszyk.css">
 </head>
 <body> 
     <div class="container">
@@ -67,10 +70,10 @@ foreach ($_SESSION['cart'] as $item) {
         
     </div>
 
-    
+
     <div class="container">
         <div class="navbar">
-            <!-- Your navbar content here -->
+           
         </div>
         
         <h1>Twój Koszyk</h1>
@@ -91,6 +94,12 @@ foreach ($_SESSION['cart'] as $item) {
         <?php endif; ?>
         
     </div>
+    <form method="POST">
+    <button type="submit" name="clear_cart" class="clear-cart-btn">Opróżnij koszyk</button>
+</form>
+
+
+
    
 
      </body>

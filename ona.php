@@ -119,5 +119,38 @@ session_start();
 
 
 
+
+<script>
+    document.querySelectorAll('.koszyk-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const productName = this.getAttribute('data-name');
+            const productPrice = parseFloat(this.getAttribute('data-price'));
+            const sizeId = document.getElementById(this.getAttribute('data-size-id')).value;
+
+            
+            addToCart(productName, productPrice, sizeId);
+        });
+    });
+
+    function addToCart(name, price, size) {
+    const product = { name, price, size };
+
+    fetch('dodaj_do_koszyka.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(product)
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert(data.message);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+
+</script>
  </body>
 </html>
