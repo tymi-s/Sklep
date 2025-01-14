@@ -75,3 +75,58 @@
 .clear-cart-btn:hover {
     background-color: rgb(8, 8, 8);
 }
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Odstęp między polami */
+  margin-bottom: 15px; /* Odstęp między wierszami */
+}
+
+.form-row label {
+  flex: 0 0 150px; /* Szerokość etykiety */
+  text-align: right; /* Wyrównanie tekstu w etykiecie */
+}
+
+.form-row input,
+.form-row select {
+  flex: 1; /* Pola wypełniają pozostałą przestrzeń */
+  padding: 5px; /* Odstęp wewnętrzny */
+  font-size: 14px; /* Rozmiar tekstu */
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; /* Zielony kolor tła */
+  color: white; /* Kolor tekstu */
+  padding: 10px 20px; /* Wewnętrzne odstępy */
+  font-size: 16px; /* Rozmiar tekstu */
+  font-weight: bold; /* Pogrubiony tekst */
+  border: none; /* Brak obramowania */
+  border-radius: 5px; /* Zaokrąglone rogi */
+  cursor: pointer; /* Zmiana kursora na "rękę" */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Efekt przejścia */
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* Ciemniejszy zielony po najechaniu */
+  transform: scale(1.05); /* Powiększenie przycisku przy hover */
+}
+
+button[type="submit"]:active {
+  background-color: #3e8e41; /* Jeszcze ciemniejszy zielony po kliknięciu */
+  transform: scale(0.95); /* Zmniejszenie przycisku po kliknięciu */
+}
+
+.odstep {
+  margin-bottom: 20px; /* Odstęp na dole */
+}

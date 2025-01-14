@@ -23,7 +23,7 @@ session_start();
                     <li><a href="">Kontakt</a></li>
                     <li class="odstep"></li>
                     <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true): ?>
-                        <a href="/Sklep/koszyk.php"> Koszyk  </a></li>
+                        <a href="/Sklep/koszyk"> Koszyk  </a></li>
                         <li class="odstep"></li>
                         <li class="witaj" >Witaj <?php echo htmlspecialchars($_SESSION['user_name']); ?></li>
                         <li><a href="konto">Konto</a></li>
@@ -45,12 +45,12 @@ session_start();
 </div>
 
             <div class="col-2 ">
-                <a href="http://localhost/Sklep/on.php">
+                <a href="http://localhost/Sklep/on">
                     <img src="PHOTOS/on.png" alt="On" style="cursor: pointer;">
                 </a>
             </div>
             <div class="col-2">
-                <a href="http://localhost/Sklep/ona.php">
+                <a href="http://localhost/Sklep/ona">
                     <img src="PHOTOS/ona.png" alt="Ona" style="cursor: pointer;">
                 </a>
             </div>

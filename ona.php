@@ -30,12 +30,12 @@ $produkty = [
             <nav>
                 <ul>
                 <a href="/Sklep">Strona główna &nbsp; </a></li>
-                <a href="/Sklep/on.php"> &nbsp; On &nbsp; &nbsp; </a></li>
+                <a href="/Sklep/on"> &nbsp; On &nbsp; &nbsp; </a></li>
                     <li><a href="">O nas</a></li>
                     <li><a href="">Kontakt</a></li>
                     <li class="odstep"></li>
                     <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true): ?>
-                        <a href="/Sklep/koszyk.php"> Koszyk  </a></li>
+                        <a href="/Sklep/koszyk"> Koszyk  </a></li>
                         <li class="odstep"></li>
                         <li class="witaj" >Witaj <?php echo htmlspecialchars($_SESSION['user_name']); ?></li>
                         <li><a href="konto">Konto</a></li>

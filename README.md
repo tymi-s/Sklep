@@ -19,5 +19,15 @@ CREATE TABLE users (
     mail TEXT,
     haslo TEXT
 );
+
+CREATE TABLE zamowienia (
+    id_zamowienia INT AUTO_INCREMENT PRIMARY KEY,
+    id_uzytkownika INT NOT NULL,
+    cena DECIMAL(10, 2) NOT NULL,
+    adres TEXT NOT NULL,
+    data_zlozenia DATETIME DEFAULT CURRENT_TIMESTAMP,
+    status ENUM('Oczekujące', 'W realizacji', 'Zrealizowane') DEFAULT 'Oczekujące',
+    FOREIGN KEY (id_uzytkownika) REFERENCES users(id) ON DELETE CASCADE
+);
 ```
 
