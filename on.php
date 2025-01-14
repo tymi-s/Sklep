@@ -12,6 +12,7 @@ session_start();
     <link rel="stylesheet" href="main.css">
 </head>
 <body> 
+    <script src="Sklep/kosz.js" defer></script>
     <div class="container">
         <div class="navbar">
             <div class="logo">
@@ -21,6 +22,7 @@ session_start();
             </div>
             <nav>
                 <ul>
+                
                     <a href="/Sklep">Strona główna &nbsp; </a></li>
                     <a href="/Sklep/ona.php"> &nbsp; Ona &nbsp; &nbsp; </a></li>
                     <li><a href="">O nas</a></li>
@@ -56,8 +58,13 @@ session_start();
             <option value="L">L</option>
             <option value="XL">XL</option>
         </select>
-        <button class="koszyk-btn">Dodaj do koszyka</button>
+
+        <button class="koszyk-btn"
+        data-name="Biała koszulka" 
+        data-price="99.99" 
+        data-size-id="rozmiar1">Dodaj do koszyka</button>
     </div>
+
     <div class="produkt">
     <p>Czarny T-shirt</p>
         <img src="PHOTOS/k2.png" alt="Produkt 2">
@@ -118,6 +125,32 @@ session_start();
 
 
 
+
+
+
+
+<script>
+    document.querySelectorAll('.koszyk-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const productName = this.getAttribute('data-name');
+            const productPrice = parseFloat(this.getAttribute('data-price'));
+            const sizeId = document.getElementById(this.getAttribute('data-size-id')).value;
+
+            
+            addToCart(productName, productPrice, sizeId);
+        });
+    });
+
+    function addToCart(name, price, size) {
+       
+        let cart = JSON.parse(sessionStorage.getItem('cart')) || [];
+        
+        cart.push({ name, price, size });
+        sessionStorage.setItem('cart', JSON.stringify(cart));
+        
+        alert('Produkt dodany do koszyka!');
+    }
+</script>
 
  </body>
 </html>

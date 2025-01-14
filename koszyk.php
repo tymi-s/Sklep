@@ -1,6 +1,26 @@
 <?php
 session_start();
+
+
+
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = [];
+}
+
+ 
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
+    $product = $_POST['product'];
+    $_SESSION['cart'][] = $product;
+}
+
+
+$totalPrice = 0;
+foreach ($_SESSION['cart'] as $item) {
+    $totalPrice += $item['price'];
+}
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +41,7 @@ session_start();
             </div>
             <nav>
                 <ul>
+              
                     <a href="/Sklep">Strona główna &nbsp; </a></li>
                     <a href="/Sklep/ona.php"> &nbsp; Ona &nbsp; &nbsp; </a></li>
                     <a href="/Sklep/on.php"> &nbsp; On &nbsp; &nbsp; </a></li>
@@ -43,8 +64,34 @@ session_start();
 
 
 
+        
+    </div>
 
-
+    
+    <div class="container">
+        <div class="navbar">
+            <!-- Your navbar content here -->
+        </div>
+        
+        <h1>Twój Koszyk</h1>
+        
+        <?php if (count($_SESSION['cart']) > 0): ?>
+            <div class="cart">
+                <ul>
+                    <?php foreach ($_SESSION['cart'] as $item): ?>
+                        <li>
+                            <?php echo htmlspecialchars($item['name']); ?> - <?php echo htmlspecialchars($item['size']); ?> - <?php echo number_format($item['price'], 2); ?> PLN
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+                <p><strong>Total: <?php echo number_format($totalPrice, 2); ?> PLN</strong></p>
+            </div>
+        <?php else: ?>
+            <p>Twój koszyk jest pusty.</p>
+        <?php endif; ?>
+        
+    </div>
+   
 
      </body>
      </html>
